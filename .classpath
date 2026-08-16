@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="2026-07-30/Programacao_orientada_java_01/src"/>
+	<classpathentry kind="src" path="2026-08-10/src"/>
+	<classpathentry kind="src" path="2026-08-10v2/src"/>
+	<classpathentry kind="src" path="2026-08-13-Exercicio01/src"/>
+	<classpathentry kind="src" path="2026-08-13-Exercicio02/src"/>
+	<classpathentry kind="src" path="2026-08-13-Exercicio03/src"/>
+	<classpathentry kind="src" path="2026-08-13-Exercicio04/src"/>
+	<classpathentry kind="src" path="2026-08-13-Exercicio05/src"/>
+	<classpathentry kind="src" path="2026-08-13/src"/>
+	<classpathentry kind="src" path="2026-08-13v2/src"/>
+	<classpathentry kind="src" path="20260813/src"/>
+	<classpathentry kind="output" path="2026-07-30/Programacao_orientada_java_01/bin"/>
+</classpath>

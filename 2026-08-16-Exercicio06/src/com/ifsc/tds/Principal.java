@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		// FaÃ§a um programa que receba como entrada trÃªs valores e os imprima emordem crescente.
+		// 06 Faça um programa que receba como entrada três valores e os imprima emordem decrescente
 		int numero1 = 0;
 		int numero2 = 0;
 		int numero3 = 0;
@@ -22,26 +22,26 @@ public class Principal {
 		System.out.println("Insira o Terceiro Numero: ");
 		numero3 = teclado.nextInt();
 		
-		if (numero1 > numero2) {
+		if (numero1 < numero2) {
 			tempnumero = numero1;
 			numero1 = numero2;
 			numero2 = tempnumero;			
 		} 
 		
-		if (numero2 > numero3) {
+		if (numero2 < numero3) {
 			tempnumero = numero2;
 			numero2 = numero3;
 			numero3 = tempnumero;
 		}
 		
-		if (numero1 > numero2) {
+		if (numero1 < numero2) {
 			tempnumero = numero1;
 			numero1 = numero2;
 			numero2 = tempnumero;			
 		} 
 		
 		
-		System.out.println("numeros em ordem: " +numero1 +numero2 +numero3);
+		System.out.println("numeros em ordem desc: " +numero1 +numero2 +numero3);
 		teclado.close();
 
 	}
