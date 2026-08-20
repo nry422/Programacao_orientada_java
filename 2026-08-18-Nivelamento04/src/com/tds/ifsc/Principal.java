@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		// Faça um programa que peça dois números, base e expoente, calcule e imprima o primeiro número elevado
-		//ao segundo número. Utilize a função de potência da linguagem.
+		// Faï¿½a um programa que peï¿½a dois nï¿½meros, base e expoente, calcule e imprima o primeiro nï¿½mero elevado
+		//ao segundo nï¿½mero. Utilize a funï¿½ï¿½o de potï¿½ncia da linguagem.
 		
 		double base = 0;
 		double expoente = 0;
 		double result = 0;
+		Calcular calcularResultados = new Calcular();
 		
 		Scanner teclado = new Scanner(System.in);
 		
@@ -20,9 +21,9 @@ public class Principal {
 		System.out.println("Insira o expoente ");
 		expoente = teclado.nextDouble();
 		
-		result = Math.pow(base, expoente);
+		result = calcularResultados.resultados(base, expoente);
 		
-		System.out.println("O número " + String.format("%.2f", base) + " elevado a: " + String.format("%.2f", expoente) + " resulta em " + String.format("%.2f", result));
+		System.out.println("O nï¿½mero " + String.format("%.2f", base) + " elevado a: " + String.format("%.2f", expoente) + " resulta em " + String.format("%.2f", result));
 		
 		teclado.close();
 		

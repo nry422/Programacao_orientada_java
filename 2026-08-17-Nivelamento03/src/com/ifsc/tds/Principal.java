@@ -9,6 +9,7 @@ public class Principal {
 Utilize as variáveis AREA e RAIO, a constante π (pi = 3,14159) e os operadores aritméticos de multiplicação.pi = 3,14159) e os operadores aritméticos de multiplicação.) e os operadores aritméticos de multiplicação */
 	double area = 0;
 	double raio = 0;
+	Area calcularArea = new Area();
 			
 	Scanner teclado = new Scanner(System.in);
 	
@@ -16,7 +17,9 @@ Utilize as variáveis AREA e RAIO, a constante π (pi = 3,14159) e os operadores
 	System.out.println("Insira o raio: ");
 	raio = teclado.nextDouble();
 	
-	area = 3.14159 * raio * raio;
+	area = calcularArea.fazer(raio);
+	
+	
 	
 	System.out.println("Area é " +area);
 	
