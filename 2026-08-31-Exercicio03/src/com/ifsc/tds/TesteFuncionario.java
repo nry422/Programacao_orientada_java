@@ -21,12 +21,12 @@ public class TesteFuncionario {
 		System.out.println("Digite o nome:  ");
 		String vnome = teclado.nextLine();
 
-		teclado.nextLine();
+		
 
 		System.out.println("Digite o sobrenome:  ");
 		String vsobrenome = teclado.nextLine();
 
-		teclado.nextLine();
+		
 
 		System.out.println("Digite as horas trabalhadas:  ");
 		double vhorastra = teclado.nextDouble();
@@ -40,14 +40,16 @@ public class TesteFuncionario {
 
 		esteFuncionario.calcularSalario();
 
-		System.out.println("valor de horas extras?");
+		System.out.println("valor de horas extras? 0 se não tiver");
 		double horaextra = teclado.nextDouble();
+		
+		if (horaextra != 0) {
 
 		esteFuncionario.incrementarHora(horaextra);
 
 		esteFuncionario.nomeCompleto();
 
-		esteFuncionario.calcularSalario();
+		esteFuncionario.calcularSalario();}
 
 	}
 
