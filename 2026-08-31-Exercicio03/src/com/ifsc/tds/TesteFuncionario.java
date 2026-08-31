@@ -40,7 +40,7 @@ public class TesteFuncionario {
 
 		esteFuncionario.calcularSalario();
 
-		System.out.println("valor de horas extras? 0 se não tiver");
+		System.out.println("valor de horas trabalhadas adicionais? 0 se não tiver");
 		double horaextra = teclado.nextDouble();
 		
 		if (horaextra != 0) {

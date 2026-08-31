@@ -24,12 +24,12 @@ public Funcionario(String v1, String v2, double v3, double v4) {
 } // construtor
 
 public void nomeCompleto() {
-	System.out.println(nome + sobrenome);
+	System.out.println(nome + " " +sobrenome);
 } // metodos
 
 public void calcularSalario() {
 	double total = horasTrabalhadas * valorPorHora;
-	System.out.println("Total a receber = " + String.format("%.2f", total));
+	System.out.println("Total a receber = " + String.format("%.2f", total) + " R$");
 } // metodos
 
 
