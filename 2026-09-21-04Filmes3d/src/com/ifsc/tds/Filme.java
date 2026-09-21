@@ -38,10 +38,10 @@ public class Filme {
 		this.genero = genero;
 	}
 	
-	private void dados() {
+	public void dados() {
 		System.out.println("Titulo do filme: " + titulo);
 		System.out.println("Duração do filme: " + this.duracao);
-		System.out.println("Genero do filme: " + this.duracao);
+		System.out.println("Genero do filme: " + this.genero);
 	}
 
 }

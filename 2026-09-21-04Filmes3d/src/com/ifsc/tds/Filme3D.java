@@ -30,7 +30,12 @@ public class Filme3D extends Filme {
 		this.taxaOculos = taxaOculos;
 	}
 	
-	private void exibirRelatorioCompleto()
-	
+	public void exibirRelatorioCompleto() {
+			super.dados();
+			System.out.println("Tecnologia de projecao: " + this.tecnologiaProjecao);
+			System.out.println("Taxa do Oculos: R$ " + String.format("%.2f", this.taxaOculos));
+			
+			
+	}
 
 }
