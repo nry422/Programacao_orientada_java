@@ -14,8 +14,12 @@ public class Vital {
 		
 		System.out.println("VITAL MESSAGE");
 		System.out.println(" ");
-		System.out.println("HOW DIFFICULT? (4-10?");
+		
+		do {
+		System.out.println("HOW DIFFICULT? (4-10?)");
 		dif = teclado.nextInt();
+		
+		} while (dif < 4 || dif > 10);
 		
 		for (int i=1; i <= dif; i++) {
 			
@@ -23,9 +27,11 @@ public class Vital {
 			
 		}
 		
+		System.out.println("SEND THIS MESSAGE:");
+		
 		System.out.println(ms);
 		
-		Thread.sleep(1000);
+		Thread.sleep(dif * 200);
 		
 		System.out.println(" ");
 		System.out.println(" ");
@@ -44,8 +50,8 @@ public class Vital {
 		System.out.println(" ");
 		
 		
-		System.out.println("Insira a mensagem: ");
-		ns = teclado.next();
+		System.out.println("TYPE THE MESSAGE:");
+		ns = teclado.next().toUpperCase();
 		
 		if (ns.equals(ms)) {
 			
@@ -57,6 +63,7 @@ public class Vital {
 			System.out.println("YOU SHOULD HAVE SENT");
 			System.out.println(ms);
 		}
+		
 		
 		
 		teclado.close();
