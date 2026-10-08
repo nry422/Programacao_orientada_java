@@ -31,7 +31,7 @@ public class Vital {
 		
 		System.out.println(ms);
 		
-		Thread.sleep(dif * 200);
+		Thread.sleep(dif * 333);
 		
 		System.out.println(" ");
 		System.out.println(" ");
@@ -60,7 +60,7 @@ public class Vital {
 			
 		} else {
 			System.out.println("YOU GOT IT WRONG");
-			System.out.println("YOU SHOULD HAVE SENT");
+			System.out.println("YOU SHOULD HAVE SENT:");
 			System.out.println(ms);
 		}
 		
