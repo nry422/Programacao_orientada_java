@@ -1,10 +1,15 @@
+package ifsc.tds.controller;
+
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -125,6 +130,19 @@ public class calculadoraController implements Initializable{
     public void initialize(URL location, ResourceBundle resources) {
     	
     }
+
+	public boolean onCloseQuery() {
+		Alert alerta = new Alert(Alert.AlertType.CONFIRMATION);
+		alerta.setTitle("Perguntar");
+		alerta.setHeaderText("Deseja sair do sistema?");
+		ButtonType botaoNao = ButtonType.NO;
+		ButtonType botaoSim = ButtonType.YES;
+		alerta.getButtonTypes().setAll(botaoSim, botaoNao);
+		Optional<ButtonType> opcaoClicada = alerta.showAndWait();
+		
+		
+		return opcaoClicada.get() == botaoSim ? true : false;
+	}
     
     
 
