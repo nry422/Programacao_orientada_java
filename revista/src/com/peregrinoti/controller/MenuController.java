@@ -40,6 +40,10 @@ public class MenuController implements Initializable {
 
 	@FXML
 	private Menu mnuCadastro;
+	
+	@FXML
+	private MenuItem mnoAmigo;
+
 
 	@FXML
 	private MenuItem mnoCaixa;
@@ -86,6 +90,40 @@ public class MenuController implements Initializable {
 	public void setStage(Stage stage) {
 		this.stage = stage;
 	}
+	
+
+    @FXML
+    void onClickMnoAmigo(ActionEvent event) {
+    	
+    	try {
+			// carregando o loader
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/peregrinoti/view/AmigoLista.fxml"));
+			Parent amigoListaXML = loader.load();
+
+			// carregando o controller e a scene
+			AmigoListaController amigoListaController = loader.getController();
+			Scene amigoListaLayout = new Scene(amigoListaXML);
+
+			this.getStage().setScene(amigoListaLayout);
+			this.getStage().setTitle("Cadastro de amigo");
+
+			// atribuindo evento para fechar janela
+			this.getStage().setOnCloseRequest(e -> {
+				if (amigoListaController.onCloseQuery()) {
+					this.getStage().close();
+				} else {
+					e.consume();
+				}
+			});
+
+			this.stage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+    }
+    
+    
 
 	@FXML
 	void onClickMnoCaixa(ActionEvent event) {
@@ -128,7 +166,7 @@ public class MenuController implements Initializable {
 			Scene tipoColecaoListaLayout = new Scene(tipoColecaoListaXML);
 
 			this.getStage().setScene(tipoColecaoListaLayout);
-			this.getStage().setTitle("Cadastro de tipo de coleção");
+			this.getStage().setTitle("Cadastro de tipo de coleï¿½ï¿½o");
 
 			// atribuindo evento para fechar janela
 			this.getStage().setOnCloseRequest(e -> {
@@ -187,7 +225,7 @@ public class MenuController implements Initializable {
 	void onClickMnoSobre(ActionEvent event) {
 		Alert alerta = new Alert(Alert.AlertType.INFORMATION);
 		alerta.setTitle("Sobre");
-		alerta.setHeaderText("Sistema desenvolvido por: Peregrino TI - 2020.\nDesenvolvido com JavaFX versão 1.0.");
+		alerta.setHeaderText("Sistema desenvolvido por: Peregrino TI - 2020.\nDesenvolvido com JavaFX versï¿½o 1.0.");
 		alerta.showAndWait();
 	}
 
