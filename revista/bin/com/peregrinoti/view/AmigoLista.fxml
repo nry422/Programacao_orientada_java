@@ -18,7 +18,7 @@
          <items>
             <AnchorPane fx:id="pnlEsquerda" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <TableView fx:id="tbvTipoAmigos" prefHeight="398.0" prefWidth="210.0">
+                  <TableView fx:id="tbvAmigos" prefHeight="398.0" prefWidth="210.0">
                      <columns>
                         <TableColumn fx:id="tbcCodigo" prefWidth="75.0" text="Código" />
                         <TableColumn fx:id="tbcNome" prefWidth="75.0" text="Nome" />
